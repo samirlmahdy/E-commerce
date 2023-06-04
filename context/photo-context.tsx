@@ -24,7 +24,7 @@ export interface PhotoContextInterface {
 export const PhotoContext = createContext<PhotoContextInterface>({
   likedPhotos: [],
   setLikedPhotos: () => {},
-  handleLike: (id: number) => void{}
+  handleLike: (id: number) => void {},
 });
 
 type PhotoContextProps = {
@@ -35,7 +35,7 @@ export default function PhotoContextProvider({ children }: PhotoContextProps) {
   const [likedPhotos, setLikedPhotos] = useState<number[]>([]);
 
   const handleLike = (id: number) => {
-    console.log('handle like ', id)
+    console.log("handle like ", id);
     const isLiked = likedPhotos.includes(id);
     if (isLiked) {
       setLikedPhotos((prevLikedPhotos) =>
@@ -54,7 +54,7 @@ export default function PhotoContextProvider({ children }: PhotoContextProps) {
   }, []);
 
   useEffect(() => {
-    console.log('likedPhotots',likedPhotos)
+    console.log("likedPhotots", likedPhotos);
     localStorage.setItem("likedPhotos", JSON.stringify(likedPhotos));
   }, [likedPhotos]);
 
