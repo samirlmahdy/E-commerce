@@ -19,8 +19,8 @@ export default function RootLayout({
     <PhotoContextProvider>
       <html lang="en">
         <body>
+        <Nav />
           {children}
-          <Nav />
         </body>
       </html>
     </PhotoContextProvider>
