@@ -2,10 +2,52 @@
 
 body {
   margin: 0;
-  margin-bottom: 80px !important;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+.navbar{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left:0;
+  height: 80px;
+  background-color: rgb(255, 75, 75);
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar li{
+  list-style-type: none;
+  color: white;
+  padding:0;
+  margin:0;
+}
+
+.navbar a{
+color: white;
+text-decoration: none;
+}
+
+.navbar p {
+  color: white;
+  opacity: 1;
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
+  display: none;
+}
+
+
+.icon{
+  color: white;
+  height: 30px;
+}
+
+
 
 .cards-main-container {
   max-width: 420px;
@@ -13,6 +55,7 @@ body {
   flex-direction: column;
   margin: auto;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 @media screen and (min-width: 700px) {
@@ -36,6 +79,7 @@ body {
     margin-top: 0;
     justify-content: flex-end;
     z-index: 100;
+
   }
   body {
     padding-top: 80px;
@@ -43,6 +87,10 @@ body {
 
   .navbar .icon {
     display: none;
+  }
+
+  .navbar li{
+    margin-right: 60px;
   }
 }
 
@@ -53,6 +101,7 @@ body {
     flex-direction: row;
     max-width: 100%;
     justify-content: space-around;
+    margin-bottom: 0;
   }
   .card {
     flex: 1 0 40%;
@@ -64,7 +113,7 @@ body {
   .navbar {
     top: 0;
     margin-top: 0;
-    justify-content: space-between;
+    justify-content: flex-end;
     z-index: 100;
   }
   .navbar ul {
@@ -76,6 +125,12 @@ body {
   .navbar .icon {
     display: none;
   }
+  .navbar li  p  {
+    display: block;
+}
+.navbar li{
+  margin-right: 20px;
+}
 
 }
 
@@ -106,7 +161,7 @@ body {
   .navbar .icon {
     display: none;
   }
-  .navbar p {
+  .navbar li  p  {
     display: block;
-  }
+}
 }
