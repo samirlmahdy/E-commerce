@@ -16,6 +16,8 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
+  padding: 0 5% 0;
+  margin: 0 auto;
   height: 80px;
   background-color: rgb(216, 72, 130);
   margin-bottom: 0;
