@@ -1,5 +1,4 @@
 import Link from "next/link";
-import "./Nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faHeart } from "@fortawesome/free-solid-svg-icons";
 

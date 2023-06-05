@@ -1,8 +1,9 @@
-import "./card.css";
 import { Photo } from "../public/photos";
 import Hashtags from "./Hashtag";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
+import { faHeart as solidHeart } from "@fortawesome/free-solid-svg-icons";
+
 import { useContext } from "react";
 import { PhotoContext } from "@/context/photo-context";
 
@@ -30,11 +31,15 @@ const Card = (props: cardProps) => {
                 <FontAwesomeIcon
                   className={
                     likedPhotos.includes(props.photo.id)
-                      ? "heart-icon red"
+                      ? "heart-icon liked"
                       : " heart-icon"
                   }
                   onClick={() => handleLike(props.photo.id)}
-                  icon={faHeart}
+                  icon={
+                    likedPhotos.includes(props.photo.id)
+                      ? solidHeart
+                      : regularHeart
+                  }
                 />
               </div>
             </div>
@@ -42,11 +47,11 @@ const Card = (props: cardProps) => {
 
           <div className="image-meta">
             <div className="image-likes">
-              <FontAwesomeIcon className="heart-icon-32" icon={faHeart} /> 32
+              <FontAwesomeIcon className="heart-icon-32" icon={solidHeart} /> 32
               likes
             </div>
             <div className="image-text">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
 
               <div className="hashtag-container">
                 {props.photo.hashtags.map((hashtag) => (

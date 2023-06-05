@@ -35,14 +35,14 @@ export const photos: Photo[] = [
       author: "Rick Rothenberg",
       hashtags: ["Crosswalk", "Backpack", "Bags", "Street Photograpy"],
     },
-  //   {
-  //     id: 4,
-  //     url: "./image/image1.jpeg",
-  //     title: "Photo 1",
-  //     authorImage: "./author image/image1_author.jpeg",
-  //     author: "Rick Rothenberg",
-  //     hashtags: ["Crosswalk", "Backpack", "Bags", "Street Photograpy"],
-  //   },
+    {
+      id: 4,
+      url: "./image/image1.jpeg",
+      title: "Photo 1",
+      authorImage: "./author image/image1_author.jpeg",
+      author: "Rick Rothenberg",
+      hashtags: ["Crosswalk", "Backpack", "Bags", "Street Photograpy"],
+    },
   //   {
   //     id: 5,
   //     url: "./image/image1.jpeg",
