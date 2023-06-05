@@ -15,7 +15,7 @@ export const photos: Photo[] = [
     title: "Lady crossing the street",
     authorImage:
       "https://images.unsplash.com/photo-1685516067971-e585cc7cebf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80",
-    author: "Claude Nai",
+    author: "claudenai",
     hashtags: ["Crosswalk", "Backpack", "Bags", "Street Photograpy"],
   },
   {
@@ -25,12 +25,12 @@ export const photos: Photo[] = [
     authorImage:
       "https://images.unsplash.com/photo-1685516067971-e585cc7cebf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80",
     author: "Claude Nai",
-    hashtags: ["Crosswalk", "Backpack", "Bags", "StreetPhotograpy"],
+    hashtags: ["Crosswalk", "Backpack", "StreetPhotograpy"],
   },
     {
       id: 3,
-      url: "./image/image1.jpeg",
-      title: "A young woman in a zebra...",
+      url: "https://images.unsplash.com/photo-1684703125510-673d3042873f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
+      title: "Lissabon Purtugal",
       authorImage: "./author image/image1_author.jpeg",
       author: "Rick Rothenberg",
       hashtags: ["Crosswalk", "Backpack", "Bags", "Street Photograpy"],
